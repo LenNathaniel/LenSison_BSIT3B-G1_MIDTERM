@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <libraryusers>
+        <users>
+            <name>Len Nathaniel Sison</name>
+            <course> BSIT </course> 
+            <yearlevel>BSIT 3B-G1</yearlevel> 
+            <adviser>Engr. Noemi P. Reyes</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            Len.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>David Alvarez</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3B-G1</yearlevel> 
+            <adviser>Engr. Noemi P. Reyes</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            davidpic.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>Edrian Dela Pena</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3B-G1</yearlevel> 
+            <adviser>Engr. Noemi P. Reyes</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            edpic.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>Jem Creydel Bello</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3B-G1</yearlevel> 
+            <adviser>Engr. Noemi P. Reyes</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            jempic.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>Yhuri Evangelista</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3B-G2</yearlevel> 
+            <adviser>Engr. Noemi P. Reyes</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            yhuripic.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>Jan Andrei Caballero</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3B-G2</yearlevel> 
+            <adviser>Engr. Noemi P. Reyes</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            andrei.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>Ian Juan</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3B-G2</yearlevel> 
+            <adviser>Engr. Noemi P. Reyes</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            ianpic.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>Esaiah Jay Ragocos</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3G-G2</yearlevel> 
+            <adviser>Ms. Carmela Isabelle Mendoza</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            esaiah.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>Vincent Alcedo</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3F-G1</yearlevel> 
+            <adviser>Mr. Adrian James De Jesus</adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            vincentpic.jpg
+            </picture> 
+        </users>
+        <users>
+            <name>John Ruiz De Honor</name> 
+            <course> BSIT </course>
+            <yearlevel>BSIT 3E-G2</yearlevel> 
+            <adviser>Mr. Jean Eren Fajardo </adviser> 
+            <schoolyear>2024-2025</schoolyear>
+            <picture>
+            ruizpic.jpg
+            </picture> 
+        </users>
+    </libraryusers>
+
+    

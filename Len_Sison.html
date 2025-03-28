@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Colleges - Library Users</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            font-size: 25px;
+            margin-top: 0;
+            color: gray;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .user-card {
+            border: 3px solid black;
+            padding: 15px;
+            background-color: #f9f9f9;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .user-card img {
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            object-fit: cover;
+            border: 3px solid black;
+        }
+        .user-info {
+            font-size: 12px;
+            flex-grow: 1;
+        }
+        .user-info p {
+            margin: 5px 0;
+        }
+        .user-info b {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ABC Colleges</h1>
+    <h2>Library Users</h2>
+
+    <div class="container" id="userData">Loading...</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("Len_Sison.xml")
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(data => {
+                    let users = data.getElementsByTagName("users");
+                    let output = "";
+
+                    for (let i = 0; i < users.length; i++) {
+                        let name = users[i].getElementsByTagName("name")[0].textContent.trim();
+                        let course = users[i].getElementsByTagName("course")[0].textContent.trim();
+                        let yearLevel = users[i].getElementsByTagName("yearlevel")[0].textContent.trim();
+                        let adviser = users[i].getElementsByTagName("adviser")[0].textContent.trim();
+                        let schoolYear = users[i].getElementsByTagName("schoolyear")[0].textContent.trim();
+                        let picture = users[i].getElementsByTagName("picture")[0].textContent.trim();
+
+                        output += `
+                            <div class="user-card">
+                                <div class="user-info">
+                                    <p><b>Name:</b> ${name}</p>
+                                    <p><b>Course:</b> ${course}</p>
+                                    <p><b>Year Level/Section:</b> ${yearLevel}</p>
+                                    <p><b>Adviser:</b> ${adviser}</p>
+                                    <p><b>School Year:</b> ${schoolYear}</p>
+                                </div>
+                                <img src="${picture}" alt="Profile Picture" onerror="this.src='default.jpg';">
+                            </div>
+                        `;
+                    }
+                    document.getElementById("userData").innerHTML = output;
+                })
+                .catch(error => {
+                    console.error("Error loading XML:", error);
+                    document.getElementById("userData").innerHTML = "<p>Error loading user data.</p>";
+                });
+        });
+    </script>
+
+</body>
+</html>
